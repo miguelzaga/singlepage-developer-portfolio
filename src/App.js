@@ -3,79 +3,78 @@ import { useState } from "react";
 function App() {
   return (
     <div>
-  adamkeyes
+      <header>
+        <p>adamkeyes</p>
+        <nav></nav>
+      </header>
+      <main>
+        <section>
+          <img src="" alt="" />
+          <h1>
+            Nice to meet you! I'm <b>Adam Keyes</b>.
+          </h1>
+          <p>
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
 
-  Nice to meet you! I'm Adam Keyes.
+          <button>Contact me</button>
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
+          <div>
+            <ul>
+              <li>HTML 4 Years Experience</li>
 
-  Contact me
+              <li>CSS 4 Years Experience</li>
 
-  HTML
-  4 Years Experience
+              <li>JavaScript 4 Years Experience</li>
 
-  CSS
-  4 Years Experience
+              <li>Accessibility 4 Years Experience</li>
 
-  JavaScript
-  4 Years Experience
+              <li>React 3 Years Experience</li>
 
-  Accessibility
-  4 Years Experience
+              <li>Sass 3 Years Experience</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h2>Projects</h2>
 
-  React
-  3 Years Experience
+            <button>Contact me</button>
+          </div>
 
-  Sass
-  3 Years Experience
+          <ul>
+            <li>Design portfolio HTML CSS View project View code</li>
 
-  Projects
+            <li>E-learning landing page HTML CSS View project View code</li>
 
-  Contact me
+            <li>Todo web app HTML CSS JavaScript View project View code</li>
 
-  Design portfolio
-  HTML CSS
-  View project
-  View code
+            <li>
+              Entertainment web app HTML CSS JavaScript View project View code
+            </li>
 
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
+            <li>Memory Game HTML CSS JavaScript View project View code</li>
 
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
+            <li>
+              Art gallery showcase HTML CSS JavaScript View project View code
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <h2>Contact</h2>
+        <p>
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+        <form>
+          Name Email Message
+          <button>Send message</button>
+        </form>
 
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+        <nav> adamkeyes</nav>
+      </footer>
     </div>
   );
 }
