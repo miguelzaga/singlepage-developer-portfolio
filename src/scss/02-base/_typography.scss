@@ -1,1 +1,32 @@
 @use "./../01-abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+@mixin body {
+  font-size: rem(18px);
+  line-height: rem(28px);
+}
+
+@mixin heading-m {
+  font-weight: 700;
+  font-size: rem(24px);
+  line-height: rem(32px);
+}
+
+@mixin heading-l {
+  font-weight: 700;
+  font-size: rem(48px);
+  line-height: rem(56px);
+  letter-spacing: rem(-1.5px);
+}
+
+@mixin heading-xl {
+  font-weight: 700;
+  font-size: rem(88px);
+  line-height: rem(88px);
+  letter-spacing: rem(-2.5px);
+}
