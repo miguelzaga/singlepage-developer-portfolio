@@ -1,0 +1,10 @@
+@use "./../01-abstracts/" as *;
+
+.wrapper {
+  position: relative;
+  padding: 0 16px;
+}
+
+.header {
+  padding-top: 20px;
+}

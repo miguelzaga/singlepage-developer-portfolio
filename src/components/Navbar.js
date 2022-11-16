@@ -4,8 +4,8 @@ import iconLinkedin from "/src/assets/images/icon-linkedin.svg";
 import iconTwitter from "/src/assets/images/icon-twitter.svg";
 
 var icons = [
-  { src: iconFrontendMentor, name: "Frontend Mentor" },
   { src: iconGithub, name: "Github" },
+  { src: iconFrontendMentor, name: "Frontend Mentor" },
   { src: iconLinkedin, name: "Linkedin" },
   { src: iconTwitter, name: "Twitter" },
 ];
