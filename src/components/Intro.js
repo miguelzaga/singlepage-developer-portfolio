@@ -1,13 +1,15 @@
 import profileMobile from "/src/assets/images/image-profile-mobile.webp";
 import profileTablet from "/src/assets/images/image-profile-tablet.webp";
 import profileDesktop from "/src/assets/images/image-profile-desktop.webp";
+import patternRings from "/src/assets/images/pattern-rings.svg";
+import patternCircle from "/src/assets/images/pattern-circle.svg";
 
 export default function Intro() {
   return (
     <section className="intro">
       <picture>
-        <source srcset={profileDesktop}media="(min-width: 1000px)" />
-        <source srcset={profileTablet}media="(min-width: 600px)" />
+        <source srcset={profileDesktop} media="(min-width: 1000px)" />
+        <source srcset={profileTablet} media="(min-width: 600px)" />
         <img className="intro__img" src={profileMobile} alt="Profile picture" />
       </picture>
       <img src="" alt="" />
@@ -36,6 +38,8 @@ export default function Intro() {
           <li>Sass 3 Years Experience</li>
         </ul>
       </div>
+      <img className="intro__pattern-rings" src={patternRings} alt="" />
+      <img className="intro__pattern-circle" src={patternCircle} alt="" />
     </section>
   );
 }

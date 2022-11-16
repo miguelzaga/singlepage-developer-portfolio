@@ -11,4 +11,22 @@
     margin-left: calc(-174px / 2);
     max-width: 174px;
   }
+
+  &__pattern {
+    &-rings {
+      position: absolute;
+      width: 530px;
+      top: 124px;
+      left: -50%;
+      z-index: -2;
+    }
+
+    &-circle {
+      position: absolute;
+      width: 129px;
+      top: 254px;
+      right: -65px;
+      z-index: -2;
+    }
+  }
 }
