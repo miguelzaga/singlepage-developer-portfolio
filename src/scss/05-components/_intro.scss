@@ -2,6 +2,12 @@
 
 .intro {
   margin-top: 331px;
+  text-align: center;
+
+  &__top {
+    padding-bottom: 80px;
+    border-bottom: $white 1px solid;
+  }
 
   &__img {
     position: absolute;
@@ -10,6 +16,26 @@
     left: 50%;
     margin-left: calc(-174px / 2);
     max-width: 174px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(40px);
+    line-height: rem(40px);
+    letter-spacing: rem(-1.13636px);
+    margin-bottom: 20px;
+
+    &-name {
+      display: inline-block;
+      border-bottom: 4px solid $green;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: rem(26px);
+    margin-bottom: 24px;
   }
 
   &__pattern {

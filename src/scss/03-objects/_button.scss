@@ -1,0 +1,14 @@
+@use "./../01-abstracts/" as *;
+
+.button {
+  border: none;
+  background-color: transparent;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: rem(16px);
+  line-height: rem(26px);
+  letter-spacing: rem(2.28571px);
+  border-bottom: 2px $green solid;
+  padding-bottom: 10px;
+}
