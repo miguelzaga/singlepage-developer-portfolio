@@ -1,2 +1,14 @@
 @use "./../01-abstracts/" as *;
 
+.intro {
+  margin-top: 331px;
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    margin-left: calc(-174px / 2);
+    max-width: 174px;
+  }
+}

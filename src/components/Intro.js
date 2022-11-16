@@ -1,6 +1,15 @@
+import profileMobile from "/src/assets/images/image-profile-mobile.webp";
+import profileTablet from "/src/assets/images/image-profile-tablet.webp";
+import profileDesktop from "/src/assets/images/image-profile-desktop.webp";
+
 export default function Intro() {
   return (
     <section className="intro">
+      <picture>
+        <source srcset={profileDesktop}media="(min-width: 1000px)" />
+        <source srcset={profileTablet}media="(min-width: 600px)" />
+        <img className="intro__img" src={profileMobile} alt="Profile picture" />
+      </picture>
       <img src="" alt="" />
       <h1>
         Nice to meet you! I'm <b>Adam Keyes</b>.
