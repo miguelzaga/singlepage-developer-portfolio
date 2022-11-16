@@ -1,11 +1,11 @@
 import { useState } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <header>
-        <p>adamkeyes</p>
-        <nav></nav>
+    <div className="wrapper">
+      <header className="header">
+        <Navbar />
       </header>
       <main>
         <section>
