@@ -1,0 +1,51 @@
+@use "./../01-abstracts/" as *;
+@use "./../02-base/typography" as t;
+
+.projects {
+  margin-bottom: 80px;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.13636px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: uppercase;
+
+    &-btns {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 7px;
+  }
+
+  &__skills {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 18px;
+    color: $grey;
+    @include t.body;
+  }
+}

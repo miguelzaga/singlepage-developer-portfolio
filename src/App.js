@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -10,31 +11,7 @@ function App() {
       </header>
       <main className="main">
         <Intro />
-        <section>
-          <div>
-            <h2>Projects</h2>
-
-            <button>Contact me</button>
-          </div>
-
-          <ul>
-            <li>Design portfolio HTML CSS View project View code</li>
-
-            <li>E-learning landing page HTML CSS View project View code</li>
-
-            <li>Todo web app HTML CSS JavaScript View project View code</li>
-
-            <li>
-              Entertainment web app HTML CSS JavaScript View project View code
-            </li>
-
-            <li>Memory Game HTML CSS JavaScript View project View code</li>
-
-            <li>
-              Art gallery showcase HTML CSS JavaScript View project View code
-            </li>
-          </ul>
-        </section>
+        <Projects />
       </main>
       <footer>
         <h2>Contact</h2>
