@@ -1,0 +1,13 @@
+.pattern {
+  &-rings {
+    position: absolute;
+    width: 530px;
+    z-index: -2;
+  }
+
+  &-circle {
+    position: absolute;
+    width: 129px;
+    z-index: -2;
+  }
+}

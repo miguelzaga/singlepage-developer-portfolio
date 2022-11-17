@@ -5,12 +5,39 @@ import patternRings from "/src/assets/images/pattern-rings.svg";
 import patternCircle from "/src/assets/images/pattern-circle.svg";
 
 export default function Intro() {
+  var skills = [
+    {
+      name: "HTML",
+      years: 4,
+    },
+    {
+      name: "CSS",
+      years: 4,
+    },
+    {
+      name: "Javascript",
+      years: 4,
+    },
+    {
+      name: "Accessibility",
+      years: 4,
+    },
+    {
+      name: "React",
+      years: 3,
+    },
+    {
+      name: "Sass",
+      years: 3,
+    },
+  ];
+
   return (
     <section className="intro">
-      <div className="intro__top">
+      <div className="intro__main">
         <picture>
-          <source srcset={profileDesktop} media="(min-width: 1000px)" />
-          <source srcset={profileTablet} media="(min-width: 600px)" />
+          <source srcSet={profileDesktop} media="(min-width: 1000px)" />
+          <source srcSet={profileTablet} media="(min-width: 600px)" />
           <img
             className="intro__img"
             src={profileMobile}
@@ -26,25 +53,30 @@ export default function Intro() {
         </p>
 
         <button className="intro__button button">Contact me</button>
+        <img
+          className="intro__main-rings pattern-rings"
+          src={patternRings}
+          alt=""
+        />
+        <img
+          className="intro__main-circle pattern-circle"
+          src={patternCircle}
+          alt=""
+        />
       </div>
 
-      <div className="intro__bottom">
-        <ul>
-          <li>HTML 4 Years Experience</li>
-
-          <li>CSS 4 Years Experience</li>
-
-          <li>JavaScript 4 Years Experience</li>
-
-          <li>Accessibility 4 Years Experience</li>
-
-          <li>React 3 Years Experience</li>
-
-          <li>Sass 3 Years Experience</li>
-        </ul>
-      </div>
-      <img className="intro__pattern-rings" src={patternRings} alt="" />
-      <img className="intro__pattern-circle" src={patternCircle} alt="" />
+      <ul className="intro__skills">
+        {skills.map(function renderSkill(skill, i) {
+          return (
+            <li key={`intro-li-${skill.name}-i`} className="intro__skills-li">
+              <p className="intro__skills-name">{skill.name}</p>
+              <span className="intro__skills-years">
+                {skill.years} Years Experience
+              </span>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
