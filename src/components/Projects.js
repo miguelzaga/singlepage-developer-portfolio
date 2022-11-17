@@ -1,4 +1,14 @@
 import projects from "/src/data/projects";
+/*
+   {
+    name: "Design portfolio",
+    tech: ["HTML", "CSS"],
+    liveSite: "#",
+    repo: "#",
+    imgSmall: project1Small,
+    imgLarge: project1Large,
+    }
+*/
 
 export default function Projects() {
   return (
@@ -31,10 +41,12 @@ export default function Projects() {
                 </ul>
               </div>
               <div className="projects__cell-btns">
-                <button className="projects__button button">
+                <a href={project.liveSite} className="projects__button button">
                   View project
-                </button>
-                <button className="projects__button button">View code</button>
+                </a>
+                <a href={project.repo} className="projects__button button">
+                  View code
+                </a>
               </div>
             </li>
           );
