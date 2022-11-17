@@ -3,35 +3,9 @@ import profileTablet from "/src/assets/images/image-profile-tablet.webp";
 import profileDesktop from "/src/assets/images/image-profile-desktop.webp";
 import patternRings from "/src/assets/images/pattern-rings.svg";
 import patternCircle from "/src/assets/images/pattern-circle.svg";
+import skills from "/src/data/skills";
 
-export default function Intro() {
-  var skills = [
-    {
-      name: "HTML",
-      years: 4,
-    },
-    {
-      name: "CSS",
-      years: 4,
-    },
-    {
-      name: "Javascript",
-      years: 4,
-    },
-    {
-      name: "Accessibility",
-      years: 4,
-    },
-    {
-      name: "React",
-      years: 3,
-    },
-    {
-      name: "Sass",
-      years: 3,
-    },
-  ];
-
+function Intro() {
   return (
     <section className="intro">
       <div className="intro__main">
@@ -80,3 +54,5 @@ export default function Intro() {
     </section>
   );
 }
+
+export default Intro
