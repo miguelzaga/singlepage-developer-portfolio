@@ -1,12 +1,14 @@
 .pattern {
   &-rings {
     position: absolute;
+    max-width: unset;
     width: 530px;
     z-index: -2;
   }
 
   &-circle {
     position: absolute;
+    max-width: unset;
     width: 129px;
     z-index: -2;
   }

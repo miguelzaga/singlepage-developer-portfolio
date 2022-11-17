@@ -50,6 +50,11 @@ function Intro() {
             </li>
           );
         })}
+        <img
+          className="intro__skills-rings pattern-rings"
+          src={patternRings}
+          alt=""
+        />
       </ul>
     </section>
   );
