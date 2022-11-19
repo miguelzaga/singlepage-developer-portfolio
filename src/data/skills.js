@@ -1,4 +1,4 @@
-let  skills = [
+let skills = [
   {
     name: "HTML",
     years: 4,

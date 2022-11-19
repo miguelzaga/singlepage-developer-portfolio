@@ -2,7 +2,7 @@
 
 .contact {
   padding: 60px 0 87px;
-  border-bottom: solid 1px $white; 
+  border-bottom: solid 1px $white;
   margin-bottom: 39px;
   display: flex;
   flex-direction: column;
@@ -25,5 +25,11 @@
     line-height: 26px;
     text-align: center;
     color: $grey;
+  }
+
+  &__rings {
+    z-index: 0;
+    bottom: 269px;
+    left: -343px;
   }
 }

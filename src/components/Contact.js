@@ -1,4 +1,6 @@
 import Form from "./Form";
+import patternRings from "/src/assets/images/pattern-rings.svg";
+
 export default function Contact() {
   return (
     <section className="contact">
@@ -12,6 +14,7 @@ export default function Contact() {
       <div className="contact__form">
         <Form />
       </div>
+      <img className="contact__rings pattern-rings" src={patternRings} alt="" />
     </section>
   );
 }
