@@ -1,3 +1,4 @@
+import Form from "./Form";
 export default function Contact() {
   return (
     <section className="contact">
@@ -8,13 +9,9 @@ export default function Contact() {
           fill in the form, and I’ll get back to you as soon as possible.
         </p>
       </div>
-
-      <form className="contact__form form">
-        <input required type="text" placeholder="Name" />
-        <input required type="email" placeholder="Email" />
-        <textarea placeholder="Message" />
-        <button type="submit">Send message</button>
-      </form>
+      <div className="contact__form">
+        <Form />
+      </div>
     </section>
   );
 }

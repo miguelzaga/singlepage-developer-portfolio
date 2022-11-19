@@ -1,4 +1,36 @@
+@use "./../01-abstracts/" as *;
+
 .form {
   display: flex;
   flex-direction: column;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.222222px;
+
+  &__input,
+  &__textarea {
+    background-color: transparent;
+    resize: none;
+    border: none;
+    border-bottom: solid 1px $white;
+    padding-left: 24px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+      opacity: 0.5;
+    }
+  }
+
+  &__textarea {
+    min-height: 107px;
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
 }
