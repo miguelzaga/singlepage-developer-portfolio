@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,18 +14,9 @@ function App() {
         <Intro />
         <Projects />
       </main>
-      <footer>
-        <h2>Contact</h2>
-        <p>
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible.
-        </p>
-        <form>
-          Name Email Message
-          <button>Send message</button>
-        </form>
-
-        <nav> adamkeyes</nav>
+      <footer className="footer">
+        <Contact />
+        <Navbar />
       </footer>
     </div>
   );

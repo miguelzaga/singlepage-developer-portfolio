@@ -2,10 +2,20 @@
 
 .wrapper {
   position: relative;
-  padding: 0 16px;
   overflow-x: hidden;
 }
 
 .header {
   padding-top: 20px;
+  @include padding;
+}
+
+.main {
+  @include padding;
+}
+
+.footer {
+  background-color: $dark-grey;
+  @include padding;
+  padding-bottom: 60px;
 }
