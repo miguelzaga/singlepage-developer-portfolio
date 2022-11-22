@@ -1,5 +1,14 @@
 @use "./../01-abstracts/" as *;
 
+@mixin padding {
+  padding-left: 16px;
+  padding-right: 16px;
+  @include breakpoint($md) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .wrapper {
   position: relative;
   overflow-x: hidden;

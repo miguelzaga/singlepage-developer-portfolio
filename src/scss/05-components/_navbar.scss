@@ -5,12 +5,20 @@
   flex-direction: column;
   align-items: center;
   gap: 22px;
+  @include breakpoint($md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &__name {
     font-weight: 700;
     font-size: rem(24px);
     line-height: rem(32px);
     letter-spacing: rem(-0.333333px);
+    @include breakpoint($md) {
+      font-size: rem(32px);
+      letter-spacing: rem(-0.444444px);
+    }
   }
 
   &__socials {
@@ -18,9 +26,15 @@
     width: 100%;
     max-width: 154px;
     justify-content: space-between;
+    @include breakpoint($md) {
+      max-width: 192px;
+    }
 
     &-img {
-      max-height: 19px;
+      max-height: 20px;
+      @include breakpoint($md) {
+        max-height: 25px;
+      }
     }
   }
 }
