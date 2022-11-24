@@ -21,7 +21,7 @@ let projects = [
     imgLarge: project1Large,
   },
   {
-    name: "E-learning",
+    name: "E-learning landing page",
     tech: ["HTML", "CSS"],
     liveSite: "#",
     repo: "#",

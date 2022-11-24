@@ -1,5 +1,5 @@
 @use "./../01-abstracts/" as *;
-@use "./../02-base/_typography" as *;
+@use "./../02-base/_typography" as t;
 
 .intro {
   margin-top: 331px;
@@ -122,9 +122,7 @@
       letter-spacing: rem(-1px);
       margin-bottom: 1px;
       @include breakpoint($md) {
-        font-size: rem(48px);
-        line-height: rem(56px);
-        letter-spacing: rem(-1.5px);
+        @include t.heading-l;
         margin-bottom: 5px;
       }
     }
@@ -134,7 +132,7 @@
       line-height: rem(26px);
       color: $grey;
       @include breakpoint($md) {
-        @include body;
+        @include t.body;
       }
     }
 

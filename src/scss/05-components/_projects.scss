@@ -3,24 +3,40 @@
 
 .projects {
   margin-bottom: 80px;
+  @include breakpoint($md) {
+    margin-bottom: 100px;
+  }
 
   &__heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 40px;
+    @include breakpoint($md) {
+      margin-bottom: 60px;
+    }
   }
 
   &__title {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1.13636px;
+    font-size: rem(40px);
+    line-height: rem(40px);
+    letter-spacing: rem(-1.13636px);
+    @include breakpoint($md) {
+      font-size: rem(72px);
+      line-height: rem(72px);
+      letter-spacing: rem(-2.04545px);
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+    @include breakpoint($md) {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px 24px;
+    }
   }
 
   &__cell {
@@ -36,10 +52,10 @@
   }
 
   &__name {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    @include t.heading-m;
     margin-bottom: 7px;
+    @include breakpoint($md) {
+    }
   }
 
   &__skills {
