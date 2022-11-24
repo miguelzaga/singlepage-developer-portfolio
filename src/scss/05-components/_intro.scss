@@ -1,4 +1,5 @@
 @use "./../01-abstracts/" as *;
+@use "./../02-base/_typography" as *;
 
 .intro {
   margin-top: 331px;
@@ -105,14 +106,36 @@
     font-size: rem(16px);
     line-height: rem(26px);
     position: relative;
+    @include breakpoint($md) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 7px;
+      row-gap: 52px;
+      border-bottom: none;
+      margin-bottom: 100px;
+    padding-bottom: 0;
+    }
 
     &-name {
       font-weight: 700;
       font-size: rem(32px);
       line-height: rem(40px);
-      text-align: center;
-      letter-spacing: -1px;
+      letter-spacing: rem(-1px);
       margin-bottom: 1px;
+      @include breakpoint($md) {
+        font-size: rem(48px);
+        line-height: rem(56px);
+        letter-spacing: rem(-1.5px);
+        margin-bottom: 5px;
+      }
+    }
+
+    &-years {
+      font-size: rem(16px);
+      line-height: rem(26px);
+      color: $grey;
+      @include breakpoint($md) {
+        @include body;
+      }
     }
 
     &-rings {
