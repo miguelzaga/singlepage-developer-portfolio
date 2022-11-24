@@ -1,35 +1,53 @@
 @use "./../01-abstracts/" as *;
+@use "./../02-base/typography" as t;
 
 .contact {
   padding: 60px 0 87px;
-  border-bottom: solid 1px $white;
-  margin-bottom: 39px;
   display: flex;
   flex-direction: column;
+  max-width: 445px;
+  margin: auto;
+  @include breakpoint($md) {
+    padding-bottom: 92px;
+  }
 
   &__top {
     text-align: center;
     margin-bottom: 50px;
+    @include breakpoint($md) {
+      margin-bottom: 48px;
+    }
   }
 
   &__title {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1.13636px;
+    font-size: rem(40px);
+    line-height: rem(40px);
+    letter-spacing: rem(-1.13636px);
     margin-bottom: 20px;
+    @include breakpoint($md) {
+      font-size: rem(72px);
+      line-height: rem(72px);
+    }
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: rem(16px);
+    line-height: rem(26px);
     text-align: center;
     color: $grey;
+    @include breakpoint($md) {
+      @include t.body;
+    }
   }
 
   &__rings {
     z-index: 0;
     bottom: 269px;
     left: -343px;
+    @include breakpoint($md) {
+      bottom: 130px;
+      left: -368px;
+    }
   }
 }

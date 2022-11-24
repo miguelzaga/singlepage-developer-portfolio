@@ -4,8 +4,8 @@
   padding-left: 16px;
   padding-right: 16px;
   @include breakpoint($md) {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -30,4 +30,12 @@
   background-color: $dark-grey;
   @include padding;
   padding-bottom: 60px;
+  @include breakpoint($md) {
+    padding-bottom: 40px;
+  }
+
+  & .navbar {
+    padding-top: 30px;
+    border-top: solid $white 1px;
+  }
 }
