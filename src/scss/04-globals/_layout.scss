@@ -17,6 +17,9 @@
 .header {
   padding-top: 20px;
   @include padding;
+  @include breakpoint($md) {
+    padding-top: 29px;
+  }
 }
 
 .main {

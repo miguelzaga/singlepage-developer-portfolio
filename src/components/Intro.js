@@ -11,7 +11,7 @@ function Intro() {
       <div className="intro__main">
         <picture>
           <source srcSet={profileDesktop} media="(min-width: 1000px)" />
-          <source srcSet={profileTablet} media="(min-width: 600px)" />
+          <source srcSet={profileTablet} media="(min-width: 640px)" />
           <img
             className="intro__img"
             src={profileMobile}
@@ -19,7 +19,8 @@ function Intro() {
           />
         </picture>
         <h1 className="intro__title">
-          Nice to meet you! I'm <b className="intro__title-name">Adam Keyes</b>.
+          <span className="br">Nice to </span>meet you! I'm{" "}
+          <b className="intro__title-name">Adam Keyes</b>.
         </h1>
         <p className="intro__text">
           Based in the UK, I'm a front-end developer passionate about building

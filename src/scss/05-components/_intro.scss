@@ -3,21 +3,38 @@
 .intro {
   margin-top: 331px;
   text-align: center;
+  @include breakpoint($md) {
+    margin-top: 90px;
+    text-align: left;
+  }
 
   &__main {
     padding-bottom: 80px;
     border-bottom: $white 1px solid;
     margin-bottom: 40px;
     position: relative;
+    @include breakpoint($md) {
+      padding-bottom: 60px;
+    }
 
     &-rings {
       top: -300px;
       left: -356px;
+      @include breakpoint($md) {
+        top: -65px;
+        left: -297px;
+      }
     }
 
     &-circle {
       top: -170px;
       right: -81px;
+      @include breakpoint($md) {
+        top: unset;
+        bottom: 60px;
+        right: -98px;
+        z-index: -1;
+      }
     }
   }
 
@@ -28,6 +45,13 @@
     left: 50%;
     margin-left: calc(-174px / 2);
     max-width: 174px;
+    @include breakpoint($md) {
+      top: unset;
+      left: unset;
+      bottom: 60px;
+      right: -32px;
+      max-width: 322px;
+    }
   }
 
   &__title {
@@ -36,10 +60,24 @@
     line-height: rem(40px);
     letter-spacing: rem(-1.13636px);
     margin-bottom: 20px;
+    @include breakpoint($md) {
+      & > .br::after {
+        content: "\A";
+        white-space: pre;
+      }
+      font-size: rem(72px);
+      line-height: rem(72px);
+      letter-spacing: rem(-2.04545px);
+      max-width: 445px;
+      margin-bottom: 60px;
+    }
 
     &-name {
       display: inline-block;
       border-bottom: 4px solid $green;
+      @include breakpoint($md) {
+        border-width: 6px;
+      }
     }
   }
 
@@ -48,6 +86,12 @@
     font-size: rem(16px);
     line-height: rem(26px);
     margin-bottom: 24px;
+    color: $grey;
+    @include breakpoint($md) {
+      max-width: 445px;
+      font-size: rem(18px);
+      line-height: rem(28px);
+    }
   }
 
   &__skills {
