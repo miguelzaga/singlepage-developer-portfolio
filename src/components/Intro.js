@@ -10,7 +10,7 @@ function Intro() {
     <section className="intro">
       <div className="intro__main">
         <picture>
-          <source srcSet={profileDesktop} media="(min-width: 1000px)" />
+          <source srcSet={profileDesktop} media="(min-width: 1024px)" />
           <source srcSet={profileTablet} media="(min-width: 640px)" />
           <img
             className="intro__img"

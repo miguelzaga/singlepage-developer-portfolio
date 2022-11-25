@@ -6,6 +6,9 @@
   @include breakpoint($md) {
     padding-left: 30px;
     padding-right: 30px;
+    max-width: calc(1110px + 60px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -19,6 +22,9 @@
   @include padding;
   @include breakpoint($md) {
     padding-top: 29px;
+  }
+  @include breakpoint($lg) {
+    padding-top: 39px;
   }
 }
 

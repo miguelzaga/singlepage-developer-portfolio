@@ -29,6 +29,9 @@
     @include breakpoint($md) {
       max-width: 192px;
     }
+    @include breakpoint($lg) {
+      margin-right: 30px;
+    }
 
     &-img {
       max-height: 20px;
