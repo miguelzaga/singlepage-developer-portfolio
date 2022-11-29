@@ -6,6 +6,9 @@
   @include breakpoint($md) {
     margin-bottom: 100px;
   }
+  @include breakpoint($lg) {
+    margin-bottom: 139px;
+  }
 
   &__heading {
     display: flex;
@@ -15,6 +18,10 @@
     @include breakpoint($md) {
       margin-bottom: 60px;
       padding-left: 2px;
+    }
+    @include breakpoint($lg) {
+      margin-bottom: 80px;
+      padding-left: 0;
     }
   }
 
@@ -28,6 +35,9 @@
       line-height: rem(72px);
       letter-spacing: rem(-2.04545px);
     }
+    @include breakpoint($lg) {
+      @include t.heading-xl;
+    }
   }
 
   &__list {
@@ -38,6 +48,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 60px 24px;
     }
+    @include breakpoint($lg) {
+      gap: 69px 30px;
+    }
   }
 
   &__cell {
@@ -45,10 +58,32 @@
     flex-direction: column;
     gap: 20px;
     text-transform: uppercase;
+    position: relative;
 
     &-btns {
       display: flex;
       gap: 30px;
+      transition: 0.2s ease;
+      @include breakpoint($lg) {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 87px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+        cursor: pointer;
+        & > .button {
+          display: none;
+        }
+        &:hover {
+          display: flex;
+          background-color: #000000bf;
+          & > .button {
+            display: revert;
+          }
+        }
+      }
     }
   }
 
