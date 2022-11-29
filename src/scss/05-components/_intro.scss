@@ -24,6 +24,7 @@
     @include breakpoint($lg) {
       padding-bottom: 219px;
       padding-left: 0;
+      margin-bottom: 72px;
     }
 
     &-rings {
@@ -129,9 +130,6 @@
   }
 
   &__skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 24px;
     padding-bottom: 40px;
     border-bottom: $white 1px solid;
     margin-bottom: 80px;
@@ -140,12 +138,28 @@
     line-height: rem(26px);
     position: relative;
     @include breakpoint($md) {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 7px;
-      row-gap: 52px;
       border-bottom: none;
       margin-bottom: 100px;
       padding-bottom: 0;
+    }
+    @include breakpoint($lg) {
+      margin-bottom: 140px;
+    }
+
+    &-ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+      @include breakpoint($md) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 7px;
+        row-gap: 52px;
+      }
+      @include breakpoint($lg) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 58px;
+      }
     }
 
     &-name {
@@ -157,6 +171,9 @@
       @include breakpoint($md) {
         @include t.heading-l;
         margin-bottom: 5px;
+      }
+      @include breakpoint($lg) {
+        margin-bottom: 14px;
       }
     }
 
@@ -172,6 +189,10 @@
     &-rings {
       bottom: -65px;
       right: -358px;
+      @include breakpoint($lg) {
+        bottom: -55px;
+        right: -404px;
+      }
     }
   }
 }

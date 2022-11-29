@@ -40,23 +40,25 @@ function Intro() {
         />
       </div>
 
-      <ul className="intro__skills">
-        {skills.map(function renderSkill(skill, i) {
-          return (
-            <li key={`intro-li-${skill.name}-i`} className="intro__skills-li">
-              <p className="intro__skills-name">{skill.name}</p>
-              <span className="intro__skills-years">
-                {skill.years} Years Experience
-              </span>
-            </li>
-          );
-        })}
+      <div className="intro__skills">
+        <ul className="intro__skills-ul">
+          {skills.map(function renderSkill(skill, i) {
+            return (
+              <li key={`intro-li-${skill.name}-i`} className="intro__skills-li">
+                <p className="intro__skills-name">{skill.name}</p>
+                <span className="intro__skills-years">
+                  {skill.years} Years Experience
+                </span>
+              </li>
+            );
+          })}
+        </ul>
         <img
           className="intro__skills-rings pattern-rings"
           src={patternRings}
           alt=""
         />
-      </ul>
+      </div>
     </section>
   );
 }
