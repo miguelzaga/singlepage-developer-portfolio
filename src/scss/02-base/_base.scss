@@ -6,6 +6,10 @@ body {
   background-color: $black;
 }
 
-a {
+a, button {
   text-decoration: none;
+  &:hover {
+  color: $green;
+  cursor: pointer;
+  }
 }

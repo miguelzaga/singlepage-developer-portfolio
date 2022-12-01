@@ -75,5 +75,9 @@
       bottom: 27px;
       left: -398px;
     }
+    @include breakpoint($lg) {
+      bottom: 47px;
+      left: -370px;
+    }
   }
 }

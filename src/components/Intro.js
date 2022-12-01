@@ -27,7 +27,7 @@ function Intro() {
           accessible web apps that users love.
         </p>
 
-        <button className="intro__button button">Contact me</button>
+        <a href="#contact" className="intro__button button">Contact me</a>
         <img
           className="intro__main-rings pattern-rings"
           src={patternRings}

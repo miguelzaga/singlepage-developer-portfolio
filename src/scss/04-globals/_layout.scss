@@ -42,6 +42,9 @@
   @include breakpoint($md) {
     padding-bottom: 40px;
   }
+  @include breakpoint($lg) {
+    padding-bottom: 92px;
+  }
 
   & .navbar {
     padding-top: 30px;

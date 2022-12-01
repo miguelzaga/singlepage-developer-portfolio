@@ -3,7 +3,7 @@ import patternRings from "/src/assets/images/pattern-rings.svg";
 
 export default function Contact() {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="contact__top">
         <h2 className="contact__title">Contact</h2>
         <p className="contact__text">
