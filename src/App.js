@@ -14,10 +14,12 @@ function App() {
         <Intro />
         <Projects />
       </main>
-      <footer className="footer">
-        <Contact />
-        <Navbar />
-      </footer>
+      <div className="bg-alt">
+        <footer className="footer">
+          <Contact />
+          <Navbar />
+        </footer>
+      </div>
     </div>
   );
 }

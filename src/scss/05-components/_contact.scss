@@ -5,17 +5,27 @@
   padding: 60px 0 87px;
   display: flex;
   flex-direction: column;
-  max-width: 445px;
-  margin: auto;
+  position: relative;
   @include breakpoint($md) {
     padding-bottom: 92px;
+  }
+  @include breakpoint($lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 84px;
   }
 
   &__top {
     text-align: center;
+    margin: auto;
     margin-bottom: 50px;
+    max-width: 445px;
     @include breakpoint($md) {
       margin-bottom: 48px;
+    }
+    @include breakpoint($lg) {
+      margin: 0;
+      text-align: left;
     }
   }
 
@@ -29,6 +39,10 @@
       font-size: rem(72px);
       line-height: rem(72px);
     }
+    @include breakpoint($lg) {
+      @include t.heading-xl;
+      margin-bottom: 36px;
+    }
   }
 
   &__text {
@@ -39,15 +53,27 @@
     @include breakpoint($md) {
       @include t.body;
     }
+    @include breakpoint($lg) {
+      text-align: left;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 445px;
+    margin: auto;
+    @include breakpoint($lg) {
+      margin: 0;
+    }
   }
 
   &__rings {
     z-index: 0;
-    bottom: 269px;
-    left: -343px;
+    bottom: 97px;
+    left: -359px;
     @include breakpoint($md) {
-      bottom: 130px;
-      left: -368px;
+      bottom: 27px;
+      left: -398px;
     }
   }
 }

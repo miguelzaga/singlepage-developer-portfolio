@@ -32,8 +32,11 @@
   @include padding;
 }
 
-.footer {
+.bg-alt {
   background-color: $dark-grey;
+}
+
+.footer {
   @include padding;
   padding-bottom: 60px;
   @include breakpoint($md) {
