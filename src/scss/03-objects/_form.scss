@@ -11,6 +11,7 @@
 
   &__input,
   &__textarea {
+    width: 100%;
     background-color: transparent;
     resize: none;
     border: none;
@@ -19,15 +20,39 @@
     padding-bottom: 17px;
     text-transform: uppercase;
     color: $white;
+    outline: none;
 
     &::placeholder {
       color: $white;
       opacity: 0.5;
     }
+
+    &:active,
+    &:focus {
+      border-color: $green;
+      background: none;
+    }
+
+    &--error {
+      border-color: $red;
+      background-image: url("/src/assets/images/icon-error.svg");
+      background-repeat: no-repeat;
+      background-position-x: right;
+    }
   }
 
   &__textarea {
     min-height: 107px;
+  }
+
+  &__error {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.166667px;
+    color: $red;
+    text-align: right;
   }
 
   &__button {
