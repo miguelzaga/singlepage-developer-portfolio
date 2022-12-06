@@ -1,5 +1,6 @@
 function validateInputs(event) {
-  if (event.target.tagName == "INPUT") {
+  let tagName = event.target.tagName;
+  if (tagName == "INPUT" | tagName =="TEXTAREA") {
     var input = event.target;
     var errorElement = input.nextSibling;
     var errorClass = input.classList[0] + "--error";

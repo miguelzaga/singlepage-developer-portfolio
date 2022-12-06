@@ -28,7 +28,7 @@ export default function Form() {
         <p className="form__error hidden"></p>
       </div>
       <div>
-        <textarea className="form__textarea" placeholder="Message" />
+        <textarea className="form__textarea" required placeholder="Message" />
         <p className="form__error hidden"></p>
       </div>
       <button className="form__button button" type="submit">
